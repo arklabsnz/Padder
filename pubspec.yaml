@@ -1,0 +1,16 @@
+name: padder
+description: Simple padding widgets for Flutter
+version: 1.0.0
+author: Josh Burton <athor3d@gmail.com>
+homepage: http://www.arklabs.nz
+
+environment:
+  sdk: ">=1.2.0  <=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
