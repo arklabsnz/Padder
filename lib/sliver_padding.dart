@@ -14,6 +14,30 @@ class SliverPaddingAll extends StatelessWidget {
   }
 }
 
+/// Creates insets with only the given values non-zero.
+class SliverPaddingOnly extends StatelessWidget {
+  final double left;
+  final double top;
+  final double bottom;
+  final double right;
+
+  final Widget sliver;
+
+  SliverPaddingOnly({this.left: 0.0,
+    this.top: 0.0,
+    this.right: 0.0,
+    this.bottom: 0.0,
+    this.sliver});
+
+  @override
+  Widget build(BuildContext context) {
+    return new SliverPadding(
+        padding: new EdgeInsets.only(
+            left: left, top: top, right: right, bottom: bottom),
+        sliver: sliver);
+  }
+}
+
 /// Creates only top insets
 class SliverPaddingTop extends StatelessWidget {
   final double padding;

@@ -1,4 +1,4 @@
-[![Pub](https://img.shields.io/badge/Pub-1.0.0-orange.svg)](https://pub.dartlang.org/packages/padder)
+[![Pub](https://img.shields.io/badge/Pub-1.0.1-orange.svg)](https://pub.dartlang.org/packages/padder)
 
 # Padder
 
@@ -31,3 +31,13 @@ It may not seem like much but when tweaking Flutter layouts all day long, Padder
 * PaddingSymmetrical
 
 _Padder also has **Sliver** variants of all the widgets above_
+
+## Publishing
+
+Dry Run:
+
+```flutter packages pub publish --dry-run```
+
+To publish:
+
+```flutter packages pub publish```

@@ -13,6 +13,31 @@ class PaddingAll extends StatelessWidget {
   }
 }
 
+/// Creates insets with only the given values non-zero.
+class PaddingOnly extends StatelessWidget {
+  final double left;
+  final double top;
+  final double bottom;
+  final double right;
+
+  final Widget child;
+
+  PaddingOnly(
+      {this.left: 0.0,
+      this.top: 0.0,
+      this.right: 0.0,
+      this.bottom: 0.0,
+      this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return new Padding(
+        padding: new EdgeInsets.only(
+            left: left, top: top, right: right, bottom: bottom),
+        child: child);
+  }
+}
+
 /// Creates only top insets
 class PaddingTop extends StatelessWidget {
   final double padding;
@@ -107,6 +132,8 @@ class PaddingSymmetrical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Padding(
-        padding: new EdgeInsets.symmetric(horizontal: padding, vertical: padding), child: child);
+        padding:
+            new EdgeInsets.symmetric(horizontal: padding, vertical: padding),
+        child: child);
   }
 }
