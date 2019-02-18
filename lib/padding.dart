@@ -22,12 +22,11 @@ class PaddingOnly extends StatelessWidget {
 
   final Widget child;
 
-  PaddingOnly(
-      {this.left: 0.0,
-      this.top: 0.0,
-      this.right: 0.0,
-      this.bottom: 0.0,
-      this.child});
+  PaddingOnly({this.left: 0.0,
+    this.top: 0.0,
+    this.right: 0.0,
+    this.bottom: 0.0,
+    this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -124,16 +123,19 @@ class PaddingHorizontal extends StatelessWidget {
 
 /// Creates insets with symmetrical horizontal and vertical offsets.
 class PaddingSymmetrical extends StatelessWidget {
-  final double padding;
+  final double horizontal;
+  final double vertical;
   final Widget child;
 
-  PaddingSymmetrical(this.padding, {this.child});
+  PaddingSymmetrical({
+    this.horizontal: 0.0,
+    this.vertical: 0.0,
+    this.child});
 
   @override
   Widget build(BuildContext context) {
     return new Padding(
-        padding:
-            new EdgeInsets.symmetric(horizontal: padding, vertical: padding),
+        padding: new EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical),
         child: child);
   }
 }
