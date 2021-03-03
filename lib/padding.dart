@@ -5,7 +5,7 @@ class PaddingAll extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingAll(this.padding, {this.child});
+  PaddingAll(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class PaddingOnly extends StatelessWidget {
     this.top: 0.0,
     this.right: 0.0,
     this.bottom: 0.0,
-    this.child});
+    required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class PaddingTop extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingTop(this.padding, {this.child});
+  PaddingTop(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class PaddingBottom extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingBottom(this.padding, {this.child});
+  PaddingBottom(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,7 @@ class PaddingLeft extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingLeft(this.padding, {this.child});
+  PaddingLeft(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +84,7 @@ class PaddingRight extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingRight(this.padding, {this.child});
+  PaddingRight(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +98,7 @@ class PaddingVertical extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingVertical(this.padding, {this.child});
+  PaddingVertical(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +112,7 @@ class PaddingHorizontal extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingHorizontal(this.padding, {this.child});
+  PaddingHorizontal(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -130,7 +130,7 @@ class PaddingSymmetrical extends StatelessWidget {
   PaddingSymmetrical({
     this.horizontal: 0.0,
     this.vertical: 0.0,
-    this.child});
+    required this.child});
 
   @override
   Widget build(BuildContext context) {
