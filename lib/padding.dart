@@ -5,7 +5,7 @@ class PaddingAll extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingAll(this.padding, {required this.child});
+  const PaddingAll(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -22,18 +22,11 @@ class PaddingOnly extends StatelessWidget {
 
   final Widget child;
 
-  PaddingOnly({this.left: 0.0,
-    this.top: 0.0,
-    this.right: 0.0,
-    this.bottom: 0.0,
-    required this.child});
+  const PaddingOnly({this.left: 0.0, this.top: 0.0, this.right: 0.0, this.bottom: 0.0, required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.only(
-            left: left, top: top, right: right, bottom: bottom),
-        child: child);
+    return new Padding(padding: new EdgeInsets.only(left: left, top: top, right: right, bottom: bottom), child: child);
   }
 }
 
@@ -42,12 +35,11 @@ class PaddingTop extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingTop(this.padding, {required this.child});
+  const PaddingTop(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.only(top: padding), child: child);
+    return new Padding(padding: new EdgeInsets.only(top: padding), child: child);
   }
 }
 
@@ -56,12 +48,11 @@ class PaddingBottom extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingBottom(this.padding, {required this.child});
+  const PaddingBottom(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.only(bottom: padding), child: child);
+    return new Padding(padding: new EdgeInsets.only(bottom: padding), child: child);
   }
 }
 
@@ -70,12 +61,11 @@ class PaddingLeft extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingLeft(this.padding, {required this.child});
+  const PaddingLeft(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.only(left: padding), child: child);
+    return new Padding(padding: new EdgeInsets.only(left: padding), child: child);
   }
 }
 
@@ -84,12 +74,11 @@ class PaddingRight extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingRight(this.padding, {required this.child});
+  const PaddingRight(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.only(right: padding), child: child);
+    return new Padding(padding: new EdgeInsets.only(right: padding), child: child);
   }
 }
 
@@ -98,12 +87,11 @@ class PaddingVertical extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingVertical(this.padding, {required this.child});
+  const PaddingVertical(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.symmetric(vertical: padding), child: child);
+    return new Padding(padding: new EdgeInsets.symmetric(vertical: padding), child: child);
   }
 }
 
@@ -112,12 +100,11 @@ class PaddingHorizontal extends StatelessWidget {
   final double padding;
   final Widget child;
 
-  PaddingHorizontal(this.padding, {required this.child});
+  const PaddingHorizontal(this.padding, {required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.symmetric(horizontal: padding), child: child);
+    return new Padding(padding: new EdgeInsets.symmetric(horizontal: padding), child: child);
   }
 }
 
@@ -127,15 +114,10 @@ class PaddingSymmetrical extends StatelessWidget {
   final double vertical;
   final Widget child;
 
-  PaddingSymmetrical({
-    this.horizontal: 0.0,
-    this.vertical: 0.0,
-    required this.child});
+  const PaddingSymmetrical({this.horizontal: 0.0, this.vertical: 0.0, required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
-        padding: new EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical),
-        child: child);
+    return new Padding(padding: new EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical), child: child);
   }
 }

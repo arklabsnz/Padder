@@ -5,7 +5,7 @@ class SliverPaddingAll extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingAll(this.padding, {required this.sliver});
+  const SliverPaddingAll(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,12 @@ class SliverPaddingOnly extends StatelessWidget {
 
   final Widget sliver;
 
-  SliverPaddingOnly({this.left: 0.0, this.top: 0.0, this.right: 0.0, this.bottom: 0.0, required this.sliver});
+  const SliverPaddingOnly({this.left: 0.0, this.top: 0.0, this.right: 0.0, this.bottom: 0.0, required this.sliver});
 
   @override
   Widget build(BuildContext context) {
-    return new SliverPadding(padding: new EdgeInsets.only(left: left, top: top, right: right, bottom: bottom), sliver: sliver);
+    return new SliverPadding(
+        padding: new EdgeInsets.only(left: left, top: top, right: right, bottom: bottom), sliver: sliver);
   }
 }
 
@@ -35,7 +36,7 @@ class SliverPaddingTop extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingTop(this.padding, {required this.sliver});
+  const SliverPaddingTop(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +49,7 @@ class SliverPaddingBottom extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingBottom(this.padding, {required this.sliver});
+  const SliverPaddingBottom(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +62,7 @@ class SliverPaddingLeft extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingLeft(this.padding, {required this.sliver});
+  const SliverPaddingLeft(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +75,7 @@ class SliverPaddingRight extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingRight(this.padding, {required this.sliver});
+  const SliverPaddingRight(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +88,7 @@ class SliverPaddingVertical extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingVertical(this.padding, {required this.sliver});
+  const SliverPaddingVertical(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +101,7 @@ class SliverPaddingHorizontal extends StatelessWidget {
   final double padding;
   final Widget sliver;
 
-  SliverPaddingHorizontal(this.padding, {required this.sliver});
+  const SliverPaddingHorizontal(this.padding, {required this.sliver});
 
   @override
   Widget build(BuildContext context) {
@@ -114,7 +115,7 @@ class SliverPaddingSymmetrical extends StatelessWidget {
   final double vertical;
   final Widget sliver;
 
-  SliverPaddingSymmetrical({
+  const SliverPaddingSymmetrical({
     this.horizontal: 0.0,
     this.vertical: 0.0,
     required this.sliver,

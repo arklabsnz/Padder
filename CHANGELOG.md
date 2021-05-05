@@ -1,3 +1,7 @@
+## [1.5.0] - 06/05/21
+
+# Adds const constructors
+
 ## [1.4.0] - 04/03/21
 
 # Migrated to null-safety
